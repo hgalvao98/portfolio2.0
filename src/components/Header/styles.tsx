@@ -53,7 +53,7 @@ export const LinksList = styled.ul`
   a:hover,
   a:active,
   a:focus {
-    color: #6c63ffb2;
+    color: #6c63ffb2 !important;
   }
 
   @media (min-width: 1200px) {

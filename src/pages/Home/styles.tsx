@@ -21,7 +21,7 @@ export const HomeContent = styled.div`
   }
   //desktop
   @media (min-width: 768px) {
-    margin-top: 100px;
+    margin-top: -30px;
     display: flex;
     width: 100%;
     flex-direction: row;
