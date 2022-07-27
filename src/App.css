@@ -1,0 +1,56 @@
+.container-mobile {
+  padding: 0 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.fa {
+  font-size: 26px;
+  color: #6c63ffb2;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  left: 50%;
+  z-index: 100;
+  animation-name: arrow;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+  -webkit-animation-name: arrow;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -webkit-animation-play-state: running;
+}
+
+@keyframes arrow {
+  0% {
+    bottom: 0;
+  }
+  75% {
+    bottom: 30px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@-webkit-keyframes arrow {
+  0% {
+    bottom: 0;
+  }
+  75% {
+    bottom: 30px;
+  }
+  100% {
+    bottom: 0;
+  }
+}

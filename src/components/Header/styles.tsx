@@ -1,11 +1,16 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
-  padding: 30px;
+  background-color: white;
+  z-index: 100;
+  padding: 10px 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
   @media (max-width: 767px) {
     display: none;

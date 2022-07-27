@@ -2,10 +2,18 @@ import styled from 'styled-components';
 
 export const NavbarContainer = styled.nav`
   position: fixed;
+  padding: 20px;
   top: 0;
+  background-color: white;
+
   img {
     width: 180px;
   }
+
+  .container-fluid {
+    padding: 0;
+  }
+
   width: 100%;
   overflow: hidden;
   max-height: 80px;
