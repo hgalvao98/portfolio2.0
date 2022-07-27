@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 export default function WAI() {
   return (
-    <div>WAI</div>
-  )
+    <div id="who-am-i" className="tt">
+      WAIaaaaaaaaaaaaaaaaa
+    </div>
+  );
 }

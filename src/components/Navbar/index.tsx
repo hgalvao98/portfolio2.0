@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Logo from '../../assets/imgs/Logo-Black.png';
 import Polygon from '../../assets/imgs/polygon.png';
 import { NavbarContainer } from './styles';
@@ -8,9 +7,9 @@ export default function Navbar() {
   return (
     <NavbarContainer className="navbar fixed-top">
       <div className="container-fluid">
-        <Link aria-current="page" to="/">
+        <a aria-current="page" href="/">
           <img src={Logo} alt="logo" />
-        </Link>
+        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -59,9 +58,9 @@ export default function Navbar() {
                   data-bs-dismiss="offcanvas"
                   aria-label="Close"
                 >
-                  <Link className="nav-link" aria-current="page" to="/">
+                  <a className="nav-link" aria-current="page" href="#home">
                     Home
-                  </Link>
+                  </a>
                 </button>
               </li>
               <li className="nav-item">
@@ -71,14 +70,14 @@ export default function Navbar() {
                   data-bs-dismiss="offcanvas"
                   aria-label="Close"
                 >
-                  <Link
+                  <a
                     className="nav-link"
                     aria-label="Close"
                     aria-current="page"
-                    to="/who-am-i"
+                    href="#who-am-i"
                   >
                     Who am I?
-                  </Link>
+                  </a>
                 </button>
               </li>
             </ul>
