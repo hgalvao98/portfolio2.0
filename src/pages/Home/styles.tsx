@@ -4,8 +4,10 @@ export const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
 
   @media (max-width: 767px) {
+    height: 460px;
     i {
       display: none;
     }
@@ -21,7 +23,7 @@ export const HomeContent = styled.div`
   }
   //desktop
   @media (min-width: 768px) {
-    margin-top: 100px;
+    margin-top: 110px;
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -34,7 +36,8 @@ export const HomeContent = styled.div`
 export const Figure = styled.div`
   @media (max-width: 767px) {
     position: absolute;
-    right: 0;
+    right: -100px;
+    height: 400px;
 
     img {
       width: 400px;
@@ -60,14 +63,16 @@ export const HomeText = styled.div`
     h2 {
       font-size: 2.5em;
     }
+    span {
+      color: #6c63ffb2;
+    }
   }
 
   @media (min-width: 1200px) {
     h2 {
-      font-size: 4em;
+      font-size: 2.5em;
     }
   }
-  span {
-    color: #6c63ffb2;
-  }
+
+  z-index: 6;
 `;
