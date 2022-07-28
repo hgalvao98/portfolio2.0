@@ -37,8 +37,8 @@ export default function Carrousel() {
       <Carousel
         responsive={responsive}
         ssr
-        autoPlay
-        // infinite
+        // autoPlay
+        infinite
         autoPlaySpeed={3000}
         customTransition="all 1s"
         containerClass="first-carousel-container container"

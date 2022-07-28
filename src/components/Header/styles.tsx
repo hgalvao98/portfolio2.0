@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
   background-color: white;
-  z-index: 100;
+  z-index: 10000;
   padding: 10px 30px;
   display: flex;
   flex-direction: row;
