@@ -7,12 +7,9 @@ export default function Home() {
   //come back to this, as it is only a temporary solution
   const checkWidth = () => {
     let width = window.screen.width;
-    console.log(width);
 
     return width;
   };
-
-  console.log(checkWidth());
 
   useEffect(() => {
     checkWidth();
