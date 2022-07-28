@@ -28,11 +28,11 @@ export const LogoContainer = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   img {
-    vertical-align: unset;
+    vertical-align: unset !important;
     width: 80%;
 
     @media (min-width: 1200px) {
-      width: 100%;
+      width: 70%;
     }
   }
 `;
@@ -43,20 +43,20 @@ export const LinksList = styled.ul`
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  width: 50%;
+  width: 60%;
   a {
     text-decoration: none;
     color: black;
     font-weight: 700;
+
+    &:hover {
+      color: #6c63ffb2;
+    }
   }
 
-  a:hover,
-  a:active,
-  a:focus {
-    color: #6c63ffb2 !important;
-  }
+  font-size: 18px;
 
   @media (min-width: 1200px) {
-    font-size: 25px;
+    font-size: 20px;
   }
 `;
