@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Carrousel from './components/Carrousel';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Home />
       <WAI />
+      <Carrousel />
       <Footer />
     </div>
   );
