@@ -2,6 +2,10 @@
   padding: 0 20px;
 }
 
+.container-desktop {
+  padding: 20px 30px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,7 +19,7 @@ html {
   border: 1px solid #6c63ffb2;
   border-radius: 15px;
   left: 50%;
-  z-index: 100;
+  z-index: 90;
   animation-name: arrow;
   animation-duration: 2s;
   animation-timing-function: linear;
