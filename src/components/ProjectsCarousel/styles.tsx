@@ -17,6 +17,9 @@ export const CarouselMain = styled.div`
     height: 580px !important;
     object-fit: cover;
     border-radius: 25px;
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.25);
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
   }
 
   img {
