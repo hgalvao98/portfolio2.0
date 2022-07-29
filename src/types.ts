@@ -1,5 +1,6 @@
 export type ProjectData = {
-  title?: string;
+  title1?: string;
+  title2?: string;
   website?: string;
   github?: string;
   backgroundImg?: string;
