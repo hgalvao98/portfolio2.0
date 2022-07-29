@@ -42,7 +42,10 @@ export const ProjectsCarousel = () => {
                   alt={proj.backgroundImg}
                 />
                 <div className="carousel-caption d-none d-md-block">
-                  <h5>{proj.title}</h5>
+                  <h5>
+                    {proj.title1}
+                    <span> {proj.title2}</span>
+                  </h5>
                   <div className="carousel-links">
                     <a target="_blank" rel="noreferrer" href={proj.website}>
                       <svg
