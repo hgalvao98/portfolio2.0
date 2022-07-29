@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import WID from './pages/WhatIDo';
+import WIVD from './pages/WhatIveDone';
 import WAI from './pages/WhoAmI';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <WAI />
       <Carrousel />
       <WID />
+      <WIVD />
       <Footer />
     </div>
   );
