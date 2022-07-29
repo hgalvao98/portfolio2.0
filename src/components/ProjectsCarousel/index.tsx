@@ -1,10 +1,27 @@
-import React, { FC } from 'react';
+import axios from 'axios';
+import React, { FC, useEffect, useState } from 'react';
 import { ProjectData } from '../../types';
 import Data from '../../utils/projectsData.json';
 import { CarouselMain } from './styles';
 
 export const ProjectsCarousel = () => {
-  const data: ProjectData = Data;
+  const [info, setInfo] = useState<ProjectData>([]);
+
+  const getData = () => {
+    axios
+      .get('http://hg-portfolio-data.herokuapp.com/projects')
+      .then((res) => {
+        console.log(res.data);
+        setInfo(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
 
   return (
     <CarouselMain>
@@ -14,7 +31,7 @@ export const ProjectsCarousel = () => {
         data-bs-ride="false"
       >
         <div className="carousel-inner" role="listbox">
-          {data.map((proj) => {
+          {info.map((proj) => {
             return (
               <div className="carousel-item active">
                 <img
@@ -25,7 +42,7 @@ export const ProjectsCarousel = () => {
                 <div className="carousel-caption d-none d-md-block">
                   <h5>{proj.title}</h5>
                   <div className="carousel-links">
-                    <a target="_blank" rel="noreferrer" href={proj.websiteLink}>
+                    <a target="_blank" rel="noreferrer" href={proj.website}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="70"
@@ -52,8 +69,8 @@ export const ProjectsCarousel = () => {
                     </a>
                   </div>
                   <div className="carousel-caption-text">
-                    <p>{proj.text?.description}</p>
-                    <p>Technologies used: {proj.text?.tech}</p>
+                    <p>{proj.description}</p>
+                    <p>Technologies used: {proj.technologies}</p>
                   </div>
                 </div>
               </div>
