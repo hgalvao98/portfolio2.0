@@ -1,11 +1,13 @@
 import axios from 'axios';
-import React, { FC, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ProjectData } from '../../types';
-import Data from '../../utils/projectsData.json';
 import { CarouselMain } from './styles';
 
 export const ProjectsCarousel = () => {
   const [info, setInfo] = useState<ProjectData>([]);
+
+  const active = 'carousel-item active';
+  const notActive = 'carousel-item';
 
   const getData = () => {
     axios
@@ -31,9 +33,9 @@ export const ProjectsCarousel = () => {
         data-bs-ride="false"
       >
         <div className="carousel-inner" role="listbox">
-          {info.map((proj) => {
+          {info.map((proj, i) => {
             return (
-              <div className="carousel-item active">
+              <div key={i} className={i === 0 ? active : notActive}>
                 <img
                   src={proj.backgroundImg}
                   className="d-block w-100"
