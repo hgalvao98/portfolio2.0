@@ -9,6 +9,7 @@ export default function WIVD() {
 
   return (
     <WIVDContainer id="what-ive-done" className="container-desktop">
+      <h1>Experiences</h1>
       <CardsContainer>
         {info.map((exp) => {
           return (

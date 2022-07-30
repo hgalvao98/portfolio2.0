@@ -5,9 +5,15 @@ export const CardContainer = styled.div`
   align-items: center;
   justify-content: center;
 
+  @media (min-width: 768px) {
+    p {
+      font-size: 0.8em;
+    }
+  }
+
   .flip-card {
     background-color: transparent;
-    width: 500px;
+    width: 100%;
     height: 300px;
     perspective: 1000px;
   }
@@ -55,5 +61,6 @@ export const CardContainer = styled.div`
     background-color: black;
     color: white;
     transform: rotateY(180deg);
+    padding: 5%;
   }
 `;
