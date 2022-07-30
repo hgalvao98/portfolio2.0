@@ -6,6 +6,7 @@ export const CarouselContainer = styled.div`
     backface-visibility: hidden;
     width: unset !important;
     margin: 0 20px;
+
     @media (min-width: 768px) {
       margin: 0 100px;
     }

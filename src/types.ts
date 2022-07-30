@@ -7,3 +7,10 @@ export type ProjectData = {
   description?: string;
   technologies?: string;
 }[];
+
+export type ExperienceData = {
+  img: string;
+  title: string;
+  position: string;
+  description: string;
+}[];
