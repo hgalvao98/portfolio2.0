@@ -20,7 +20,7 @@ function App() {
       <Carrousel />
       <WID />
       <WIVD />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );
