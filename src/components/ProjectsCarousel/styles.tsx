@@ -85,13 +85,23 @@ export const CarouselMain = styled.div`
   }
 
   @media (max-width: 768px) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 100px;
-      width: 100px;
-      outline: black;
-      background-size: 100%, 100%;
-      background-image: none;
+    .carousel-control-next-icon:after {
+      content: '>';
+      font-size: 55px;
+      color: black;
+    }
+
+    .carousel-control-prev-icon:after {
+      content: '<';
+      font-size: 55px;
+      color: black;
+    }
+    .carousel-control-next {
+      right: 0;
+    }
+
+    .carousel-control-prev {
+      left: 0;
     }
 
     .d-none {

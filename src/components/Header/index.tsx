@@ -21,7 +21,7 @@ export default function Header() {
           <a href="#what-ive-done">What I've done</a>
         </li>
         <li>
-          <a href="/who-am-i">Talk to me</a>
+          <a href="#talk-to-me">Talk to me</a>
         </li>
       </LinksList>
     </HeaderContainer>

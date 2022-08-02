@@ -43,6 +43,7 @@ export const NavbarContainer = styled.nav`
     right: 0;
     bottom: 0;
     width: 300px;
+    z-index: -19;
   }
 
   .nav-link {
