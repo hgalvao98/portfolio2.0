@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ContactContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 0 10%;
   background-color: #6c63ffb2;
   border-top: 1px solid black;
