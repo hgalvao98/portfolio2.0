@@ -6,6 +6,7 @@ export const Container = styled.div`
   width: 100%;
   align-items: center;
   justify-content: center;
+  scroll-margin-top: 6em;
 `;
 
 export const WAITitle = styled.div`
@@ -17,7 +18,7 @@ export const WAITitle = styled.div`
 
   @media (max-width: 767px) {
     h1 {
-      font-size: 60px;
+      font-size: 50px;
     }
   }
 `;

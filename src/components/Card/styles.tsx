@@ -16,6 +16,10 @@ export const CardContainer = styled.div`
     width: 100%;
     height: 300px;
     perspective: 1000px;
+
+    @media (max-width: 500px) {
+      height: 400px;
+    }
   }
 
   .flip-card-inner {

@@ -80,6 +80,59 @@ export default function Navbar() {
                   </a>
                 </button>
               </li>
+              <li className="nav-item">
+                <button
+                  className="button-navbar"
+                  type="button"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                >
+                  <a
+                    className="nav-link"
+                    aria-label="Close"
+                    aria-current="page"
+                    href="#what-i-do"
+                  >
+                    What I do
+                  </a>
+                </button>
+              </li>
+
+              <li className="nav-item">
+                <button
+                  className="button-navbar"
+                  type="button"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                >
+                  <a
+                    className="nav-link"
+                    aria-label="Close"
+                    aria-current="page"
+                    href="#what-ive-done"
+                  >
+                    What I've done
+                  </a>
+                </button>
+              </li>
+
+              <li className="nav-item">
+                <button
+                  className="button-navbar"
+                  type="button"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                >
+                  <a
+                    className="nav-link"
+                    aria-label="Close"
+                    aria-current="page"
+                    href="#talk-to-me"
+                  >
+                    Talk to me
+                  </a>
+                </button>
+              </li>
             </ul>
           </div>
         </div>

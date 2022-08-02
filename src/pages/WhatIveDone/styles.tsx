@@ -6,6 +6,8 @@ export const WIVDContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  scroll-margin-top: 6em;
+
   h1 {
     font-weight: 700;
   }
