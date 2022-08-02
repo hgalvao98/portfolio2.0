@@ -25,7 +25,7 @@ export const CarouselMain = styled.div`
   }
 
   img {
-    opacity: 0.2;
+    opacity: 0.1;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
   }
