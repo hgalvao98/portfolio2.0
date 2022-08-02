@@ -13,7 +13,7 @@ export const CardContainer = styled.div`
 
   .flip-card {
     background-color: transparent;
-    width: 100%;
+    width: 80%;
     height: 300px;
     perspective: 1000px;
 
@@ -57,7 +57,9 @@ export const CardContainer = styled.div`
     img {
       max-width: 100%;
       max-height: 100%;
-      width: 40%;
+      @media (min-width: 1200px) {
+        width: 30%;
+      }
     }
   }
 
