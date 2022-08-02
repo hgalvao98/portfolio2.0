@@ -1,8 +1,4 @@
 import { ExperienceData } from './../types';
-import compass from '../assets/imgs/compass.png';
-import docusign from '../assets/imgs/docusign.png';
-import liqfy from '../assets/imgs/liqfy.png';
-import uofa from '../assets/imgs/uofa.png';
 
 export const data: ExperienceData = [
   {

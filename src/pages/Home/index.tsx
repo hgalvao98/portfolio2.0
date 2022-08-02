@@ -13,7 +13,7 @@ export default function Home() {
 
   useEffect(() => {
     checkWidth();
-  }, [window.screen.width]);
+  }, []);
   //
   return (
     <HomeContainer id="home">

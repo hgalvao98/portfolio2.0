@@ -1,9 +1,5 @@
 import React from 'react';
 import { CardContainer } from './styles';
-import compass from '../assets/imgs/compass.png';
-import docusign from '../assets/imgs/docusign.png';
-import liqfy from '../assets/imgs/liqfy.png';
-import uofa from '../assets/imgs/uofa.png';
 
 interface Props {
   name: string;
