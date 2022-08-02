@@ -3,6 +3,7 @@ import './App.css';
 import Carrousel from './components/Carrousel';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
+import Popup from './components/Popup';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import WID from './pages/WhatIDo';
@@ -20,6 +21,7 @@ function App() {
       <WID />
       <WIVD />
       <Contact />
+      <Popup />
       {/* <Footer /> */}
     </div>
   );
