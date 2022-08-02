@@ -12,7 +12,7 @@ export const ProjectsCarousel = () => {
 
   const getData = () => {
     axios
-      .get('http://hg-portfolio-data.herokuapp.com/projects')
+      .get('https://hg-portfolio-data.herokuapp.com/projects')
       .then((res) => {
         setInfo(res.data);
       })
