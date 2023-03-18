@@ -1,5 +1,4 @@
-import React from 'react';
-import Logo from '../../assets/imgs/Logo-Black.png';
+import Logo from '../../assets/imgs/logo-black.png';
 import Polygon from '../../assets/imgs/polygon.png';
 import { NavbarContainer } from './styles';
 

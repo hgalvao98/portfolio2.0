@@ -1,29 +1,53 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import { initializeApp } from "@firebase/app";
+import { collection, getFirestore, onSnapshot, query } from "firebase/firestore";
+import { useEffect, useState } from 'react';
+import { ThreeDots } from 'react-loader-spinner';
+import { firebaseConfig } from '../../firestore/firestore';
 import { ProjectData } from '../../types';
 import { CarouselMain } from './styles';
-import { ThreeDots } from 'react-loader-spinner';
+
 
 export const ProjectsCarousel = () => {
   const [info, setInfo] = useState<ProjectData>();
 
+  const app = initializeApp(firebaseConfig);
+
+  const db = getFirestore(app)
+
+  const getData = () => {
+    const q = query(collection(db, "projetos"));
+    const unsubscribe = onSnapshot(q, (querySnapshot) => {
+      const test: any = []
+      querySnapshot.forEach((doc) => {
+        test.push(doc.data());
+      });
+      setInfo(test)
+    });
+  }
+
+
+  useEffect(() => {
+    getData()
+  }, [])
+
+
   const active = 'carousel-item active';
   const notActive = 'carousel-item';
 
-  const getData = () => {
-    axios
-      .get('https://hg-portfolio-data.herokuapp.com/projects')
-      .then((res) => {
-        setInfo(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
+  // const getData = () => {
+  //   axios
+  //     .get('https://hg-portfolio-data.herokuapp.com/projects')
+  //     .then((res) => {
+  //       setInfo(res.data);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // };
 
-  useEffect(() => {
-    getData();
-  }, []);
+  // useEffect(() => {
+  //   getData();
+  // }, []);
 
   return (
     <CarouselMain>
