@@ -1,5 +1,4 @@
-import React from 'react';
-import Logo from '../../assets/imgs/Logo-Black.png';
+import Logo from '../../assets/imgs/logo-black.png';
 import { HeaderContainer, LinksList, LogoContainer } from './styles';
 
 export default function Header() {
