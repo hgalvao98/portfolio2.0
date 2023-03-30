@@ -1,35 +1,37 @@
-import { initializeApp } from "@firebase/app";
-import { collection, getFirestore, onSnapshot, query } from "firebase/firestore";
+import { initializeApp } from '@firebase/app';
+import {
+  collection,
+  getFirestore,
+  onSnapshot,
+  query
+} from 'firebase/firestore';
 import { useEffect, useState } from 'react';
 import { ThreeDots } from 'react-loader-spinner';
 import { firebaseConfig } from '../../firestore/firestore';
 import { ProjectData } from '../../types';
 import { CarouselMain } from './styles';
 
-
 export const ProjectsCarousel = () => {
   const [info, setInfo] = useState<ProjectData>();
 
   const app = initializeApp(firebaseConfig);
 
-  const db = getFirestore(app)
+  const db = getFirestore(app);
 
   const getData = () => {
-    const q = query(collection(db, "projetos"));
+    const q = query(collection(db, 'projetos'));
     const unsubscribe = onSnapshot(q, (querySnapshot) => {
-      const test: any = []
+      const test: any = [];
       querySnapshot.forEach((doc) => {
         test.push(doc.data());
       });
-      setInfo(test)
+      setInfo(test);
     });
-  }
-
+  };
 
   useEffect(() => {
-    getData()
-  }, [])
-
+    getData();
+  }, []);
 
   const active = 'carousel-item active';
   const notActive = 'carousel-item';
@@ -49,6 +51,8 @@ export const ProjectsCarousel = () => {
   //   getData();
   // }, []);
 
+  console.log(info);
+
   return (
     <CarouselMain>
       {info ? (
@@ -58,7 +62,7 @@ export const ProjectsCarousel = () => {
           data-bs-ride="false"
         >
           <div className="carousel-inner" role="listbox">
-            {info.map((proj, i) => {
+            {info?.map((proj, i: number) => {
               return (
                 <div key={i} className={i === 0 ? active : notActive}>
                   <img
