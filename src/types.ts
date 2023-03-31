@@ -13,4 +13,5 @@ export type ExperienceData = {
   title: string;
   position: string;
   description: string;
+  order: number;
 }[];

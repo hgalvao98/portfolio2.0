@@ -1,4 +1,3 @@
-import React from 'react';
 import { CardContainer } from './styles';
 
 interface Props {
@@ -7,11 +6,12 @@ interface Props {
   img: string;
   description: string;
   position: string;
+  order: number;
 }
 
 export default function Card(props: Props) {
   return (
-    <CardContainer>
+    <CardContainer style={{ order: props.order }}>
       <div className="flip-card">
         <div className="flip-card-inner">
           <div className="flip-card-front">
