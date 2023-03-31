@@ -44,6 +44,11 @@ export const CardContainer = styled.div`
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 25px;
+    font-size: 15px;
+
+    @media (max-width: 500px) {
+      font-size: 12px;
+    }
   }
 
   .flip-card-front {

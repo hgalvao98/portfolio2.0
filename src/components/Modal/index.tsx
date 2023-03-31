@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { ModalContainer, ModalContent } from './styles';
 
@@ -8,8 +7,6 @@ interface Props {
 }
 
 export default function Modal(props: Props) {
-  console.log(props.openModal);
-
   const closeModal = () => props.handleCloseModal();
   return (
     <ModalContainer>

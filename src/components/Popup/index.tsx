@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { PopupContainer } from './styles';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 import Modal from '../Modal';
+import { PopupContainer } from './styles';
 
 export default function Popup() {
   const [openModal, setOpenModal] = useState(false);
@@ -10,15 +10,11 @@ export default function Popup() {
   const handleOpenModal = () => setOpenModal(true);
   const handleCloseModal = () => setOpenModal(false);
 
-  console.log(alert);
-
   useEffect(() => {
     const time = setTimeout(() => {
       setAlert(!alert);
-      // console.log('set true');
       setTimeout(() => {
         setAlert(false);
-        // console.log('set false');
       }, 2000);
     }, 1000);
     return () => clearTimeout(time);

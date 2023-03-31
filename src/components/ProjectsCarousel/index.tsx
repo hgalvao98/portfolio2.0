@@ -36,23 +36,6 @@ export const ProjectsCarousel = () => {
   const active = 'carousel-item active';
   const notActive = 'carousel-item';
 
-  // const getData = () => {
-  //   axios
-  //     .get('https://hg-portfolio-data.herokuapp.com/projects')
-  //     .then((res) => {
-  //       setInfo(res.data);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // };
-
-  // useEffect(() => {
-  //   getData();
-  // }, []);
-
-  console.log(info);
-
   return (
     <CarouselMain>
       {info ? (
