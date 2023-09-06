@@ -7,7 +7,7 @@ import {
 } from 'firebase/firestore';
 import { useEffect, useState } from 'react';
 import Card from '../../components/Card';
-import { firebaseConfig } from '../../firestore/firestore';
+import { firebaseConfig } from '../../firestore';
 import { ExperienceData } from '../../types';
 import { CardsContainer, WIVDContainer } from './styles';
 
