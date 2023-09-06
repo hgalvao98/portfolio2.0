@@ -10,7 +10,7 @@
 
 # production
 /build
-/src/firestore
+./src/firestore
 
 # misc
 .DS_Store
